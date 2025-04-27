@@ -53,10 +53,12 @@ Next, we'll need to create a Virtual Network. We'll need this in order to tie th
 
 <b>Create the Domain Controller VM</b></br>
 Now we'll create a virtual machine that will serve as the domain controller.
-1. In Azure, navigate to "virtual machines" and click on the <b>+ Create</b> tab and select <b>Azure virtual machine>/b>.
-2. Click the <b>+ Create</b> tab. Name the virtual network <em>Active-Directory-VNet</em>.
-3. Make sure the resource group is <em>Active-Directory-1</em> and that the selected Region is the same as the Resource Group's.
-4. Click on the blue `Review + Create` button and then `Create`.
+1. In Azure, navigate to "virtual machines". Click on the <b>+ Create</b> tab and select <b>Azure virtual machine</b>.
+2. Make sure the resource group is <em>Active-Directory-1</em>. Name the VM <b>DC-1</b> and make sure the selected Region is the same as the Resource Group's.
+3. For <b>Image</b> select <b>Windows Server 2022 Datacenter</b>. For size, select a size that has at least 2 vcpus.
+4. Should the username and password be the same as the client-1 machine? Click `Next` until you get to the <b>Networking</b> section.
+5. In the <b>Networking</b> section, make sure the <b>Virtual network</b> is <em>Active-Directory-VNet</em>.
+6. Click on the blue `Review + Create` button and then `Create`.
 
 <p>
 <img src="https://github.com/user-attachments/assets/86255197-2661-4b56-8401-9f0bae7e2385" height="80%" width="80%" alt="Disk Sanitization Steps"/>
