@@ -40,25 +40,34 @@ First, we'll go to Azure. There we will set up a domain controller, which is a t
 <img src="https://github.com/user-attachments/assets/37b4b6a7-b450-419f-a136-b867bbc70f19" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p></br>
 
-<b>Create a Virtual Network and Subnet</b></br>
+<b>Create a Virtual Network</b></br>
 Next, we'll need to create a Virtual Network. We'll need this in order to tie the domain controller and the client computer in a network.
 1. In Azure, enter "virtual networks" in the search bar and select.
 2. Click the <b>+ Create</b> tab. Name the virtual network <em>Active-Directory-VNet</em>.
 3. Make sure the resource group is <em>Active-Directory-1</em> and that the selected Region is the same as the Resource Group's.
+4. Click on the blue `Review + Create` button and then `Create`.
+
+<p>
+<img src="https://github.com/user-attachments/assets/86255197-2661-4b56-8401-9f0bae7e2385" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p></br>
+
+<b>Create the Domain Controller VM</b></br>
+Now we'll create a virtual machine that will serve as the domain controller.
+1. In Azure, navigate to "virtual machines" and click on the <b>+ Create</b> tab and select <b>Azure virtual machine>/b>.
+2. Click the <b>+ Create</b> tab. Name the virtual network <em>Active-Directory-VNet</em>.
+3. Make sure the resource group is <em>Active-Directory-1</em> and that the selected Region is the same as the Resource Group's.
+4. Click on the blue `Review + Create` button and then `Create`.
 
 <p>
 <img src="https://github.com/user-attachments/assets/86255197-2661-4b56-8401-9f0bae7e2385" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p></br>
 
 
-3. Click on the file named <b>PHPManagerForIIS_x64.msi</b>. The file will be downloaded automatically.
-4. Type <b>File Explorer</b> in the search box and open it.
-5. Open the <b>Downloads</b> folder.
-6. Double-click the file `PHPManagerForIIS_x64` > click `Next` > accept the terms > `Next` > `Next` > `Install` > `Finish`.
 
-<p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p></br>
+
+
+
+
 <p>
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
 </p>
