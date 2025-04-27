@@ -61,12 +61,21 @@ Now we'll create a virtual machine that will serve as the domain controller.
 6. Click on the blue `Review + Create` button and then `Create`.
 
 <p>
-<img src="https://github.com/user-attachments/assets/86255197-2661-4b56-8401-9f0bae7e2385" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://github.com/user-attachments/assets/3e16cc92-a486-47d2-ad01-a11670d8189d" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p></br>
 
 
+<b>Set Domain Controller’s NIC Private IP address to be static</b></br>
+In order to avoid disrupting clients' hability to connect to the domain controller, we need a static domain controller IP.
+1. In Azure, enter <em>virtual machines</em> in the search bar and click on the <b>DC-1</b> name.
+2. On the left-side panel, click on <b>Networking</b> > <b>Network settings</b>
+3. Click on the <b>Network interface / IP configuration</b> link at the top
+4. In the <b>IP Settings</b> section, click on the <b>Name</b> at the bottom (in this case it's <em>ipconfig1</em>).
+5. Select the <b>Static</b> radial button and click `Save`.
 
-
+<p>
+<img src="https://github.com/user-attachments/assets/bc764d2d-8acd-47d9-9f5a-f9317086f656" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p></br>
 
 
 
