@@ -103,8 +103,6 @@ Now we'll create the Client VM. We'll name it <b>Client-1</b>
 <img src="https://github.com/user-attachments/assets/8ef72746-0415-409c-ad2c-2698cd85c06d" height="80%" width="80%" alt="Set up Client-1"/>
 </p></br>
 
-
-
 <b>Set Client-1’s DNS settings to DC-1’s Private IP address</b></br>
 Now we need to get Client-1 in the same network as DC-1
 1. Back in Azure, type <b>Virtual Machines</b> in the search bar and click on DC-1
@@ -118,6 +116,39 @@ Now we need to get Client-1 in the same network as DC-1
 <p>
 <img src="https://github.com/user-attachments/assets/711634b9-28e6-4d8e-8b18-c2f20f68a404" height="80%" width="80%" alt="Set up Client-1"/>
 </p></br>
+
+
+<b>Restart Client-1</b></br>
+Back in the <b>Virtual Machines</b> window, tick the box next to the <b>Client-1</b> vm and click `Restart` at the top
+
+<p>
+<img src="https://github.com/user-attachments/assets/82d92f53-a57e-4bb0-b885-8eddea29c859" height="80%" width="80%" alt="Set up Client-1"/>
+</p></br>
+
+
+<b>Ping the Domain Controller from Client-1</b></br>
+Now we need to verify that Client-1 and DC-1 are on the same network
+1. Remote into the <b>Client-1</b> vm
+2. Open <b>Windows Powershell</b> by typing <em>Powershell</em> in the search bar and select <b>Run as administrator</b>
+3. Type `ping 10.0.0.4` and press <b>Enter</b>. You should see four replies from <b>DC-1</b>
+
+<p>
+<img src="https://github.com/user-attachments/assets/916cc4c5-c26c-4265-98cb-ce49aaa7236c" height="80%" width="80%" alt="Set up Client-1"/>
+</p></br>
+
+
+<b>View Client-1's Network Configurations</b></br>
+To further verify that <b>Client-1</b> is on the same network as <b>DC-1</b>:
+1. While still in <b>Windows Powershell</b> type `ipconfig /all` and press <b>Enter</b>
+2. Look for <b>DNS Servers</b> at the bottom and you'll see <b>DC-1's</b> Private IP address
+
+
+<p>
+<img src="https://github.com/user-attachments/assets/8b485c3a-2b91-413a-af04-c6df105633e4" height="80%" width="80%" alt="Set up Client-1"/>
+</p></br>
+
+
+
 
 
 
