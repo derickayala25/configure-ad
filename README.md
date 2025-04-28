@@ -29,7 +29,7 @@ This tutorial outlines the implementation of on-premises Active Directory within
 - Install Active Directory in Domain Controller
 - Step 4
 
-<h2>Deployment and Configuration Steps</h2>
+<h2>Deployment and Configuration Steps</h2></br>
 
 <b>Setup Domain Controller in Azure</b></br>
 First, we'll go to Azure. There we will set up a domain controller, which is a type of server that handles authentication, authorization, and other identity management tasks.
@@ -37,7 +37,7 @@ First, we'll go to Azure. There we will set up a domain controller, which is a t
 2. Make a note of the <b>Region</b> (you'll need it later). Name the resource group <em>Active-Directory-1</em>. Click on the blue `Review + Create` button.
 
 <p>
-<img src="https://github.com/user-attachments/assets/37b4b6a7-b450-419f-a136-b867bbc70f19" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://github.com/user-attachments/assets/37b4b6a7-b450-419f-a136-b867bbc70f19" height="80%" width="80%" alt="Domain Controller Setup"/>
 </p></br>
 
 <b>Create a Virtual Network</b></br>
@@ -48,7 +48,7 @@ Next, we'll need to create a Virtual Network. We'll need this in order to tie th
 4. Click on the blue `Review + Create` button and then `Create`.
 
 <p>
-<img src="https://github.com/user-attachments/assets/86255197-2661-4b56-8401-9f0bae7e2385" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://github.com/user-attachments/assets/86255197-2661-4b56-8401-9f0bae7e2385" height="80%" width="80%" alt="Virtual Network Setup"/>
 </p></br>
 
 <b>Create the Domain Controller VM</b></br>
@@ -61,7 +61,7 @@ Now we'll create a virtual machine that will serve as the domain controller.
 6. Click on the blue `Review + Create` button and then `Create`.
 
 <p>
-<img src="https://github.com/user-attachments/assets/3e16cc92-a486-47d2-ad01-a11670d8189d" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://github.com/user-attachments/assets/3e16cc92-a486-47d2-ad01-a11670d8189d" height="80%" width="80%" alt="Domain Controller Creation"/>
 </p></br>
 
 
@@ -74,19 +74,25 @@ In order to avoid disrupting clients' hability to connect to the domain controll
 5. Select the <b>Static</b> radial button and click `Save`.
 
 <p>
-<img src="https://github.com/user-attachments/assets/bc764d2d-8acd-47d9-9f5a-f9317086f656" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://github.com/user-attachments/assets/bc764d2d-8acd-47d9-9f5a-f9317086f656" height="80%" width="80%" alt="Domain Controller NIC"/>
 </p></br>
 
 
 
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-</p>
-<br />
+<b>Disable Windows Firewall</b></br>
+For testing connectivity, we need to disable Windows Firewall.
+1. In the domain controller virtual machine, type <b>wf.msc</b> in the search box and select.
+2. Click the link that says <b>Windows Defender Firewall Properties</b>
+3. In the `Domain Profile` tab, change the <b>Firewall state</b> to <b>Off</b>
+4. In the `Private Profile` tab, change the <b>Firewall state</b> to <b>Off</b>
+5. In the `Public Profile` tab, change the <b>Firewall state</b> to <b>Off</b>
+6. Click `Apply` and `OK`. Close the <b>Firewall</b> window.
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
+<img src="https://github.com/user-attachments/assets/bc764d2d-8acd-47d9-9f5a-f9317086f656" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p></br>
+
+
 <p>
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
 </p>
