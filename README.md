@@ -122,7 +122,7 @@ Now we need to get Client-1 in the same network as DC-1
 Back in the <b>Virtual Machines</b> window, tick the box next to the <b>Client-1</b> vm and click `Restart` at the top
 
 <p>
-<img src="https://github.com/user-attachments/assets/82d92f53-a57e-4bb0-b885-8eddea29c859" height="80%" width="80%" alt="Set up Client-1"/>
+<img src="https://github.com/user-attachments/assets/82d92f53-a57e-4bb0-b885-8eddea29c859" height="80%" width="80%" alt="Restart Client-1"/>
 </p></br>
 
 
@@ -133,7 +133,7 @@ Now we need to verify that Client-1 and DC-1 are on the same network
 3. Type `ping 10.0.0.4` and press <b>Enter</b>. You should see four replies from <b>DC-1</b>
 
 <p>
-<img src="https://github.com/user-attachments/assets/916cc4c5-c26c-4265-98cb-ce49aaa7236c" height="80%" width="80%" alt="Set up Client-1"/>
+<img src="https://github.com/user-attachments/assets/916cc4c5-c26c-4265-98cb-ce49aaa7236c" height="80%" width="80%" alt="Ping DC-1"/>
 </p></br>
 
 
