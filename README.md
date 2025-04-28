@@ -149,6 +149,23 @@ To further verify that <b>Client-1</b> is on the same network as <b>DC-1</b>:
 </p></br>
 
 
+<b>Installing Active Directory</b></br>
+Now that we have the <b>Client-1</b> VM connected to the Domain Controller, we will install Active Directory on DC-1
+1. Type <em>Server Manager</em> in the search box and select
+2. Click on selection number 2, <b>Add roles and features</b>
+3. Click `Next` until you get to the <b>Server Roles</b> section
+4. On the <b>Server Roles</b> section click on <b>Active Directory Domain Services</b>
+5. A window will open. Click the `Add Features` button. The window will close.
+6. Click `Next` on the <b>Server Roles</b> section and again until you get to the <b>Confirmation</b> section
+7. In the <b>Confirmation</b> section check the box that says <em>Restart the destination server automatically if required</em>
+8. Click `Yes` on the pop-up window, and click `Install`. Once finished, click `Close`.
+
+
+<p>
+<img src="https://github.com/user-attachments/assets/d9eee87e-b780-4c1e-a1c6-7bf1cfb224ea" height="80%" width="80%" alt="Set up Client-1"/>
+</p></br>
+
+
 
 
 
