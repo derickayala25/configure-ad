@@ -141,6 +141,7 @@ Now we need to verify that Client-1 and DC-1 are on the same network
 To further verify that <b>Client-1</b> is on the same network as <b>DC-1</b>:
 1. While still in <b>Windows Powershell</b> type `ipconfig /all` and press <b>Enter</b>
 2. Look for <b>DNS Servers</b> at the bottom and you'll see <b>DC-1's</b> Private IP address
+3. To exit <b>Powershell</b> you can type <b>exit</b> and press <b>Enter</b> or just close the window
 
 
 <p>
