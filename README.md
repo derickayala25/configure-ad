@@ -105,14 +105,23 @@ Now we'll create the Client VM. We'll name it <b>Client-1</b>
 
 
 
-<b>Set Client-1’s DNS settings to DC-1’s Private IP address</br>
+<b>Set Client-1’s DNS settings to DC-1’s Private IP address</b></br>
 Now we need to get Client-1 in the same network as DC-1
 1. Back in Azure, type <b>Virtual Machines</b> in the search bar and click on DC-1
 2. In the window that will open, look for DC-1's Private IP address under <b>Networking</b> and take note of it.
 3. In Azure still, go back to the Virtual machines window and click <b>Client-1</b>
 4. On the left side, under <b>Networking</b>, click on <b>Network settings</b> 
-5. Go to the <b>Network interface / IP configuration</b> link at the top
+5. Go to the <b>Network interface / IP configuration</b> link at the top and click it
+6. Click on <b>DNS servers</b> on the left side panel
+7. Click on <b>Custom</b> and type DC-1's private IP address in the box. In this case it's 10.0.0.4. Click `Save`.
 
 <p>
-<img src="https://github.com/user-attachments/assets/8ef72746-0415-409c-ad2c-2698cd85c06d" height="80%" width="80%" alt="Set up Client-1"/>
+<img src="https://github.com/user-attachments/assets/711634b9-28e6-4d8e-8b18-c2f20f68a404" height="80%" width="80%" alt="Set up Client-1"/>
 </p></br>
+
+
+
+
+
+
+
