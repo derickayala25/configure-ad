@@ -78,7 +78,6 @@ In order to avoid disrupting clients' hability to connect to the domain controll
 </p></br>
 
 
-
 <b>Disable Windows Firewall</b></br>
 For testing connectivity, we need to disable Windows Firewall.
 1. In the domain controller virtual machine, type <b>wf.msc</b> in the search box and select.
@@ -89,18 +88,23 @@ For testing connectivity, we need to disable Windows Firewall.
 6. Click `Apply` and `OK`. Close the <b>Firewall</b> window.
 
 <p>
-<img src="https://github.com/user-attachments/assets/bc764d2d-8acd-47d9-9f5a-f9317086f656" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://github.com/user-attachments/assets/69c8f95e-71c7-4899-855e-256e9301befe" height="80%" width="80%" alt="Disable Windows Firewall"/>
 </p></br>
 
 
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-</p>
-<br />
+<b>Set up <b>Client-1</b> in Azure</b></br>
+Now we'll create the Client VM. We'll name it <b>Client-1</b>
+1. Back in Azure, create a VM that's in the same <b>Resource Group</b> and <b>Region</b> as the domain controller.
+2. We'll use the same <b>Username</b> and <b>Password</b> as the domain controller.
+3. For <b>Image</b> select <b>Windows 10 Pro</b>. For size, select a size that has at least 2 vcpus.
+4. Click on the blue `Review + Create` button and then `Create`.
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
+<img src="https://github.com/user-attachments/assets/8ef72746-0415-409c-ad2c-2698cd85c06d" height="80%" width="80%" alt="Set up Client-1"/>
+</p></br>
+
+
+
 <p>
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
 </p>
