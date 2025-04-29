@@ -278,22 +278,35 @@ Create a new OU named “_CLIENTS” and drag Client-1 into there
 <b>Create a new Organizational Unit _CLIENTS and drag Client-1 into it</b></br>
 
 1. Right-click on <b>mydomain.com</b> and select `New` > `Organizational Unit`
-3. Type <b>_CLIENTS</b> in the <b>Name</b> box and click `OK`
-4. Right-click on <b>mydomain.com</b> and click `Refresh` in order to organize the folders
-5. Click on the <b>Computers</b> folder in order to see <b>Client-1</b> on the right side-panel
-6. Drag <b>Client-1</b> to the <b>_CLIENTS</b> folder
-7. A window will open titled <b>Active Directory Domain Services</b>. Click `Yes`.
+2. Type <b>_CLIENTS</b> in the <b>Name</b> box and click `OK`
+3. Right-click on <b>mydomain.com</b> and click `Refresh` in order to organize the folders
+4. Click on the <b>Computers</b> folder in order to see <b>Client-1</b> on the right side-panel
+5. Drag <b>Client-1</b> to the <b>_CLIENTS</b> folder
+6. A window will open titled <b>Active Directory Domain Services</b>. Click `Yes`.
 
 <p>
 <img src="https://github.com/user-attachments/assets/085555f7-229f-4a7f-97eb-2def9876716b" height="80%" width="80%" alt="Move Client-1"/>
 </p></br>
 
-8.Click on the <b>_CLIENTS</b> folder to confirm the move
+7. Click on the <b>_CLIENTS</b> folder to confirm the move
 
 <p>
 <img src="https://github.com/user-attachments/assets/5af1cfbc-8adf-4dbb-8dbe-eb212b8222d3" height="80%" width="80%" alt="Confirm Client-1 Move"/>
 </p></br>
 
+
+<b>Setup Remote Desktop for non-administrative users on Client-1</b></br>
+
+1. Log into <b>Client-1</b> as <em>mydomain.com\jane_admin</em>
+2. Right-click on the <b>Start</b> icon and select <b>System</b>
+3. Click on the <b>Remote desktop</b> link on the right side
+4. Click on the link at the bottom that says <b>Select users that can remotely access this PC</b>. Click `Add`.
+5. In the <b>Select Users or Groups</b> window, type <em>Domain Users</em> and click on `Check Names`. Click `OK`.
+6. Back in the <b>Remote Desktop Users</b> window, click `OK`
+
+<p>
+<img src="https://github.com/user-attachments/assets/7f7affc3-e6ca-4e92-be18-b7a3735de6a7" height="80%" width="80%" alt="Non-Admin Setup"/>
+</p></br>
 
 
 
