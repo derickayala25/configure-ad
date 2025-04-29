@@ -1,4 +1,4 @@
-<p align="center">
+![image](https://github.com/user-attachments/assets/5c340900-dc0d-41c6-aa9e-49c0022d09e4)<p align="center">
 <img src="https://i.imgur.com/pU5A58S.png" alt="Microsoft Active Directory Logo"/>
 </p>
 
@@ -189,13 +189,40 @@ Now we'll log in to <b>DC-1</b> as a domain user by using <em>mydomain.com\your 
 2. For <b>Username</b> type <em>mydomain.com\your username</em> and use the password you used to create the VM
 
 <p>
-<img src="https://github.com/user-attachments/assets/a3fd60ef-8822-4208-bf76-f2b21ebe3306" height="80%" width="80%" alt="Promoting DC-1"/>
+<img src="https://github.com/user-attachments/assets/a3fd60ef-8822-4208-bf76-f2b21ebe3306" height="80%" width="80%" alt="Domain User Login"/>
+</p></br>
+
+<p>
+<img src="https://github.com/user-attachments/assets/dd2dff72-6ae0-4032-9629-3b5354a7dcb1" height="80%" width="80%" alt="DC-1 Login"/>
+</p></br>
+
+<b>Create Organizational Units within the domain</b></br>
+Organizational Units are containers used to organize and manage users, computers, groups, and other objects
+1. Type <em>Active Directory Users and Computers</em> in the search box and select
+2. On the left side-panel of the window, right-click on <b>mydomain.com</b> and select `New` > `Organizational Unit`
+3. Type <b>_EMPLOYEES</b> in the <b>Name</b> box and click `OK`
+4. Right-click once more on <b>mydomain.com</b> and select `New` > `Organizational Unit`
+5. Type <b>_ADMINS</b> in the <b>Name</b> box and click `OK`
+6. Right-click on <b>mydomain.com</b> and click `Refresh` in order to organize the folders
+
+<p>
+<img src="https://github.com/user-attachments/assets/f1f31fee-e979-4d95-9443-0fc966ad261e" height="80%" width="80%" alt="Organizational Units"/>
 </p></br>
 
 
+<b>Create a Domain Admin user within the domain</b></br>
+The Domain Administrator in Active Directory has the highest level of access and control over the network domain. 
+Let's create a new employee/administrator named <b>Jane Doe</b>.
+1. Right-click on the <b>_ADMINS</b> folder and select `New` > `User`
+2. Under <b>First name</b> type <em>Jane</em>, <b>Last name</b> will be <em>Doe</em>. <b>User logon name</b> will be <em>jane_admin</em>. Click `Next`.
+3. For simplicity's sake, use the same password used when creating the VM.
+4. UNCHECK the box that says <b>User must change password at next logon</b> and CHECK the box that says <b>Password never expires</b>
+5. Click `Next` and `Finish`
 
+<p>
+<img src="https://github.com/user-attachments/assets/010663b9-761a-4ee2-b125-2e315c2fcb87" height="80%" width="80%" alt="Domain Admin"/>
+</p></br>
 
-
-
+![image](https://github.com/user-attachments/assets/010663b9-761a-4ee2-b125-2e315c2fcb87)
 
 
