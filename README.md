@@ -260,9 +260,39 @@ Use <b>jane_admin</b> as your admin account from now on
 10. Click on `Restart Now`
 
 <p>
-<img src="https://github.com/user-attachments/assets/20e55d6c-4844-4224-8574-6f9ffb44b1b8" height="80%" width="80%" alt="Domain Admin SG"/>
+<img src="https://github.com/user-attachments/assets/6d34e54c-fdae-4d5a-af62-a6c96c39c6d1" height="80%" width="80%" alt="Domain Admin SG"/>
 </p></br>
 
+
+<b>Verify Client-1 shows up in Active Directory Users and Computers</b></br>
+
+1. Back in the DC-1 VM, go to <b>Active Directory Users and Computers</b>
+2. Expand <b>mydomain.com</b>, click on the <b>Computers</b> folder and you should see <b>Client-1</b> on the right side-panel.
+3. On the right side of the window you will see a link that says <b>Rename this PC (advanced)</b>, click it
+Create a new OU named “_CLIENTS” and drag Client-1 into there
+<p>
+<img src="https://github.com/user-attachments/assets/82ff4f85-e165-447c-a1ea-06edbc4921cc" height="80%" width="80%" alt="Domain Admin SG"/>
+</p></br>
+
+
+<b>Create a new Organizational Unit _CLIENTS and drag Client-1 into it</b></br>
+
+1. Right-click on <b>mydomain.com</b> and select `New` > `Organizational Unit`
+3. Type <b>_CLIENTS</b> in the <b>Name</b> box and click `OK`
+4. Right-click on <b>mydomain.com</b> and click `Refresh` in order to organize the folders
+5. Click on the <b>Computers</b> folder in order to see <b>Client-1</b> on the right side-panel
+6. Drag <b>Client-1</b> to the <b>_CLIENTS</b> folder
+7. A window will open titled <b>Active Directory Domain Services</b>. Click `Yes`.
+
+<p>
+<img src="https://github.com/user-attachments/assets/085555f7-229f-4a7f-97eb-2def9876716b" height="80%" width="80%" alt="Domain Admin SG"/>
+</p></br>
+
+8.Click on the <b>_CLIENTS</b> folder to confirm the move
+
+<p>
+<img src="https://github.com/user-attachments/assets/5af1cfbc-8adf-4dbb-8dbe-eb212b8222d3" height="80%" width="80%" alt="Domain Admin SG"/>
+</p></br>
 
 
 
