@@ -222,15 +222,31 @@ Let's create a new employee/administrator named <b>Jane Doe</b>.
 <p>
 <img src="https://github.com/user-attachments/assets/010663b9-761a-4ee2-b125-2e315c2fcb87" height="80%" width="80%" alt="Domain Admin"/>
 </p></br>
-Add jane_admin to the “Domain Admins” Security Group
+
 
 <b>Add jane_admin to the Domain Admins Security Group</b></br>
-Now that Jane Doe is in the _ADMINS Organizational Unit, we need to add her to the “Domain Admins” Security Group.
-1. Right-click on the <b>_ADMINS</b> folder and select `New` > `User`
-2. Under <b>First name</b> type <em>Jane</em>, <b>Last name</b> will be <em>Doe</em>. <b>User logon name</b> will be <em>jane_admin</em>. Click `Next`.
-3. For simplicity's sake, use the same password used when creating the VM.
-4. UNCHECK the box that says <b>User must change password at next logon</b> and CHECK the box that says <b>Password never expires</b>
-5. Click `Next` and `Finish`
+Now that Jane Doe is in the <b>_ADMINS</b> organizational unit, we need to add her to the <b>Domain Admins</b> Security Group.
+1. Back in the <b>Active Directory Users and Computers</b> window, click on the <b>_ADMINS</b> folder
+2. Inside the right side-panel, right-click the username <b>Jane Doe</b> and select `Properties`
+3. Click on the `Member Of` tab and click `Add`
+4. Type <em>Domain Admins</em> in the <b>Enter the object names to select (examples)</b> box.
+5. Click `Check Names` and click `OK`
+6. In the <b>Jane Doe Properties</b> window, click `Apply` and then `OK`
+
+<p>
+<img src="https://github.com/user-attachments/assets/20e55d6c-4844-4224-8574-6f9ffb44b1b8" height="80%" width="80%" alt="Domain Admin SG"/>
+</p></br>
+
+
+
+
+
+
+
+
+
+
+
 
 
 
