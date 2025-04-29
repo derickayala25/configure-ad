@@ -114,7 +114,7 @@ Now we need to get Client-1 in the same network as DC-1
 7. Click on <b>Custom</b> and type DC-1's private IP address in the box. In this case it's 10.0.0.4. Click `Save`.
 
 <p>
-<img src="https://github.com/user-attachments/assets/711634b9-28e6-4d8e-8b18-c2f20f68a404" height="80%" width="80%" alt="Set up Client-1"/>
+<img src="https://github.com/user-attachments/assets/711634b9-28e6-4d8e-8b18-c2f20f68a404" height="80%" width="80%" alt="Change DNS Settings"/>
 </p></br>
 
 
@@ -145,7 +145,7 @@ To further verify that <b>Client-1</b> is on the same network as <b>DC-1</b>:
 
 
 <p>
-<img src="https://github.com/user-attachments/assets/8b485c3a-2b91-413a-af04-c6df105633e4" height="80%" width="80%" alt="Set up Client-1"/>
+<img src="https://github.com/user-attachments/assets/8b485c3a-2b91-413a-af04-c6df105633e4" height="80%" width="80%" alt="Network Configurations"/>
 </p></br>
 
 
@@ -260,7 +260,7 @@ Use <b>jane_admin</b> as your admin account from now on
 10. Click on `Restart Now`
 
 <p>
-<img src="https://github.com/user-attachments/assets/6d34e54c-fdae-4d5a-af62-a6c96c39c6d1" height="80%" width="80%" alt="Domain Admin SG"/>
+<img src="https://github.com/user-attachments/assets/6d34e54c-fdae-4d5a-af62-a6c96c39c6d1" height="80%" width="80%" alt="Joining Client-1 to the Domain"/>
 </p></br>
 
 
@@ -271,7 +271,7 @@ Use <b>jane_admin</b> as your admin account from now on
 3. On the right side of the window you will see a link that says <b>Rename this PC (advanced)</b>, click it
 Create a new OU named “_CLIENTS” and drag Client-1 into there
 <p>
-<img src="https://github.com/user-attachments/assets/82ff4f85-e165-447c-a1ea-06edbc4921cc" height="80%" width="80%" alt="Domain Admin SG"/>
+<img src="https://github.com/user-attachments/assets/82ff4f85-e165-447c-a1ea-06edbc4921cc" height="80%" width="80%" alt="Client-1 in AD"/>
 </p></br>
 
 
@@ -285,13 +285,13 @@ Create a new OU named “_CLIENTS” and drag Client-1 into there
 7. A window will open titled <b>Active Directory Domain Services</b>. Click `Yes`.
 
 <p>
-<img src="https://github.com/user-attachments/assets/085555f7-229f-4a7f-97eb-2def9876716b" height="80%" width="80%" alt="Domain Admin SG"/>
+<img src="https://github.com/user-attachments/assets/085555f7-229f-4a7f-97eb-2def9876716b" height="80%" width="80%" alt="Move Client-1"/>
 </p></br>
 
 8.Click on the <b>_CLIENTS</b> folder to confirm the move
 
 <p>
-<img src="https://github.com/user-attachments/assets/5af1cfbc-8adf-4dbb-8dbe-eb212b8222d3" height="80%" width="80%" alt="Domain Admin SG"/>
+<img src="https://github.com/user-attachments/assets/5af1cfbc-8adf-4dbb-8dbe-eb212b8222d3" height="80%" width="80%" alt="Confirm Client-1 Move"/>
 </p></br>
 
 
