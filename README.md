@@ -162,10 +162,35 @@ Now that we have the <b>Client-1</b> VM connected to the Domain Controller, we w
 
 
 <p>
-<img src="https://github.com/user-attachments/assets/d9eee87e-b780-4c1e-a1c6-7bf1cfb224ea" height="80%" width="80%" alt="Set up Client-1"/>
+<img src="https://github.com/user-attachments/assets/d9eee87e-b780-4c1e-a1c6-7bf1cfb224ea" height="80%" width="80%" alt="Installing AD"/>
 </p></br>
 
 
+<b>Promote the DC-1 VM/Server as a Domain Controller</b></br>
+Now we'll make <b>DC-1</b> a Domain Controller, which is a server that hosts the Active Directory Domain Services
+1. On the <b>Server Manager</b> window you will see a yellow notifications triangle at the top. Click on it and click the link that says <em>Promote this server to a domain controller</em>.
+2. On the <b>Active Directory Domain Services Configuration Wizard</b> window click on the <b>Add a new forest</b> radial button
+3. In the <b>Root domain name:</b> box type <em>mydomain.com</em> and click `Next`
+4. In the <b>Domain Controller Options</b> section enter a password and confirm. Click `Next`.
+5. In the <b>DNS Options</b> section UNCHECK the <b>Create DNS delegation</b> box. Click `Next`.
+6. In the “DNS Options” section UNCHECK the “Create DNS delegation” box. Click “Next”
+7. Click `Next` until you get to the <b>Prerequisites Check</b> section
+8. Once done running the prerequisites check, click `Install`
+9. When done, the VM will restart automatically, therefore you will have to remote in again
+
+<p>
+<img src="https://github.com/user-attachments/assets/e2b888b3-434f-4454-ba82-a216f8698b0e" height="80%" width="80%" alt="Promoting DC-1"/>
+</p></br>
+
+
+<b>Logging into DC-1 as a domain user</b></br>
+Now we'll log in to <b>DC-1</b> as a domain user by using <em>mydomain.com\your username</em>
+1. Remote in to <b>DC-1</b>
+2. For <b>Username</b> type <em>mydomain.com\your username</em> and use the password you used to create the VM
+
+<p>
+<img src="https://github.com/user-attachments/assets/a3fd60ef-8822-4208-bf76-f2b21ebe3306" height="80%" width="80%" alt="Promoting DC-1"/>
+</p></br>
 
 
 
