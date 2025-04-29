@@ -222,7 +222,15 @@ Let's create a new employee/administrator named <b>Jane Doe</b>.
 <p>
 <img src="https://github.com/user-attachments/assets/010663b9-761a-4ee2-b125-2e315c2fcb87" height="80%" width="80%" alt="Domain Admin"/>
 </p></br>
+Add jane_admin to the “Domain Admins” Security Group
 
-![image](https://github.com/user-attachments/assets/010663b9-761a-4ee2-b125-2e315c2fcb87)
+<b>Add jane_admin to the Domain Admins Security Group</b></br>
+Now that Jane Doe is in the _ADMINS Organizational Unit, we need to add her to the “Domain Admins” Security Group.
+1. Right-click on the <b>_ADMINS</b> folder and select `New` > `User`
+2. Under <b>First name</b> type <em>Jane</em>, <b>Last name</b> will be <em>Doe</em>. <b>User logon name</b> will be <em>jane_admin</em>. Click `Next`.
+3. For simplicity's sake, use the same password used when creating the VM.
+4. UNCHECK the box that says <b>User must change password at next logon</b> and CHECK the box that says <b>Password never expires</b>
+5. Click `Next` and `Finish`
+
 
 
