@@ -246,9 +246,22 @@ Use <b>jane_admin</b> as your admin account from now on
 </p></br>
 
 
+<b>Join Client-1 to your domain (mydomain.com)</b></br>
 
+1. Log in to the <b>Client-1</b> VM as the original local admin
+2. Once logged in, right-click on the <b>Start</b> icon and select <b>System</b>
+3. On the right side of the window you will see a link that says <b>Rename this PC (advanced)</b>, click it
+4. A window will open named <b>System Properties</b>, click on `Change`
+5. A window named <b>Computer Name/Domain Changes</b> will open. Select <b>Domain</b> and type <em>mydomain.com</em>. Click `OK`
+6. A <b>Windows Security</b> window will open. Type <em>mydomain.com\jane_admin</em> as User name and then type your password. Click `OK`.
+7. A pop-up window will appear (most likely behind another window) that says <b>Welcome to the mydomain.com domain.</b> Click `OK`.
+8. Another pop-up window will appear that says <b>You must restart your computer to apply these changes</b>. Click `OK`.
+9. Click `Close` in the <b>System Properties</b> window. Close the <b>Settings</b> window.
+10. Click on `Restart Now`
 
-
+<p>
+<img src="https://github.com/user-attachments/assets/20e55d6c-4844-4224-8574-6f9ffb44b1b8" height="80%" width="80%" alt="Domain Admin SG"/>
+</p></br>
 
 
 
