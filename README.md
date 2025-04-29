@@ -238,6 +238,13 @@ Now that Jane Doe is in the <b>_ADMINS</b> organizational unit, we need to add h
 </p></br>
 
 
+<b>Log out of DC-1 and log back in as mydomain.com\jane_admin</b></br>
+Use <b>jane_admin</b> as your admin account from now on
+
+<p>
+<img src="https://github.com/user-attachments/assets/6a022d87-7277-40d1-a061-c76a4e702e4e" height="80%" width="80%" alt="Logging in as Admin"/>
+</p></br>
+
 
 
 
