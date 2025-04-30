@@ -319,33 +319,39 @@ Create a new OU named “_CLIENTS” and drag Client-1 into there
 6. Click on the green `Run Script` arrow at the top of the window and observe the accounts being created
 
 <p>
-<img src="https://github.com/user-attachments/assets/6d687c44-6202-46fe-973f-880fba59d3ad" height="80%" width="80%" alt="Non-Admin Setup"/>
+<img src="https://github.com/user-attachments/assets/6d687c44-6202-46fe-973f-880fba59d3ad" height="80%" width="80%" alt="Creating Additional Users"/>
 </p></br>
 
 7. When finished, open <b>Active Directory Users and Computers</b> and observe the accounts in the appropriate <b>Organizational Unit</b> `(_EMPLOYEES)`
 
 <p>
-<img src="https://github.com/user-attachments/assets/910f8c13-74a5-419f-ab50-d386f81b64ae" height="80%" width="80%" alt="Non-Admin Setup"/>
+<img src="https://github.com/user-attachments/assets/910f8c13-74a5-419f-ab50-d386f81b64ae" height="80%" width="80%" alt="New Users"/>
 </p></br>
 
 
 <b>Log into Client-1 with one of the newly created accounts</b></br>
-Now all of the new employees created are part of the mydomain.com domain. Let's log in as one of them.
+Now all of the new employees created are part of the <b>mydomain.com</b> domain. Let's log in as one of them.
 1. Select one of the usernames created (in this case I'll select <b>bepa.toli</b>). As noted before, the default password will be <em>Password1</em>.
 2. Log in to the <b>Client-1</b> VM as <em>mydomain.com\bepa.toli</em>
 
 <p>
-<img src="https://github.com/user-attachments/assets/9a637cd7-5e68-4d74-a8b6-d48587d16a06" height="80%" width="80%" alt="Non-Admin Setup"/>
+<img src="https://github.com/user-attachments/assets/9a637cd7-5e68-4d74-a8b6-d48587d16a06" height="80%" width="80%" alt="First Login-1"/>
 </p>
 
 <p>
-<img src="https://github.com/user-attachments/assets/08261c74-7753-43a4-b450-0cbfbc7da332" height="80%" width="80%" alt="Non-Admin Setup"/>
+<img src="https://github.com/user-attachments/assets/08261c74-7753-43a4-b450-0cbfbc7da332" height="80%" width="80%" alt="First Login-2"/>
 </p></br>
 
+3. Now that you've confirmed that the setup has been done correctly, you can log off the <b>Client-1</b> VM.</br>
 
 
+<b>Dealing with Account Lockouts</b></br>
+If you're not already logged in to <b>DC-1</b> as the admin, log in as <em>mydomain.com\jane_admin</em>
 
 
+<p>
+<img src="https://github.com/user-attachments/assets/9a637cd7-5e68-4d74-a8b6-d48587d16a06" height="80%" width="80%" alt="Non-Admin Setup"/>
+</p>
 
 
 
