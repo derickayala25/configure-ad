@@ -354,13 +354,19 @@ If you're not already logged in to <b>DC-1</b> as the admin, log in as <em>mydom
 4. In the <b>Group Policy Management Editor</b> window, expand the following: `Computer Configuration` > `Policies` > `Windows Settings` > `Security Settings` > `Account Policies`
 5. Click on <b>Account Lockout Policy</b>. Double-click on <b>Account lockout duration</b>, check the box that says <b>Define this policy setting</b>, and set the minutes to 30
 
-
-
-
 <p>
-<img src="https://github.com/user-attachments/assets/9a637cd7-5e68-4d74-a8b6-d48587d16a06" height="80%" width="80%" alt="Non-Admin Setup"/>
+<img src="https://github.com/user-attachments/assets/42e4127b-6029-41a4-9c2c-aceb766e5a10" height="80%" width="80%" alt="Lockout Policy"/>
 </p>
 
+6. Click `Apply`. A <b>Suggested Value Changes</b> window will open, click `OK` and it will close. Click `OK` again.</br>
+
+Now two out of the three other settings have been automatically updated: <b>Account lockout threshold</b> will be updated to <em>5 invalid logon attempts</em>, <b>Allow Administrator account lockout</b> will remain <em>Not Defined</em>, and <b>Reset account lockout counter after</b> will change to 10 minutes.
+
+<p>
+<img src="https://github.com/user-attachments/assets/36ef17d4-2200-4d1f-87ce-dd52363719a5" height="80%" width="80%" alt="Non-Admin Setup"/>
+</p>
+
+You can close the <b>Group Policy Management Editor</b> window.
 
 
 
