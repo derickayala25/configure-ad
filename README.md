@@ -314,9 +314,10 @@ Create a new OU named “_CLIENTS” and drag Client-1 into there
 1. Log into <b>DC-1</b> as <em>mydomain.com\jane_admin</em>
 2. Open <b>Windows PowerShell ISE</b> as an administrator
 3. Click on the blue arrow next to the word <b>script</b> to open the script pane
-4. Create a new file and paste the contents of the [script](https://github.com/derickayala25/derickayala25/blob/main/Generate-Names-Create-Users.txt) into it
-5. In the <b>Select Users or Groups</b> window, type <em>Domain Users</em> and click on `Check Names`. Click `OK`.
-6. Back in the <b>Remote Desktop Users</b> window, click `OK`
+4. Click on this [script](https://github.com/derickayala25/derickayala25/blob/main/Generate-Names-Create-Users.txt) link
+5. Select all the script and copy. Go back to the script pane in <b>DC-1</b> and paste the script in it.
+6. In the <b>Select Users or Groups</b> window, type <em>Domain Users</em> and click on `Check Names`. Click `OK`.
+7. Back in the <b>Remote Desktop Users</b> window, click `OK`
 
 <p>
 <img src="https://github.com/user-attachments/assets/7f7affc3-e6ca-4e92-be18-b7a3735de6a7" height="80%" width="80%" alt="Non-Admin Setup"/>
