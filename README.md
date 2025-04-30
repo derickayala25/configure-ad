@@ -309,22 +309,25 @@ Create a new OU named “_CLIENTS” and drag Client-1 into there
 </p></br>
 
 
-<b>Create additional users and attempt to log into Client-1 with one of the users</b></br>
+<b>Create additional users</b></br>
 
 1. Log into <b>DC-1</b> as <em>mydomain.com\jane_admin</em>
 2. Open <b>Windows PowerShell ISE</b> as an administrator
 3. Click on the blue arrow next to the word <b>script</b> to open the script pane
-4. Click on this [script](https://github.com/derickayala25/derickayala25/blob/main/Generate-Names-Create-Users.txt) link
-5. Select all the script and copy. Go back to the script pane in <b>DC-1</b> and paste the script in it.
-6. In the <b>Select Users or Groups</b> window, type <em>Domain Users</em> and click on `Check Names`. Click `OK`.
-7. Back in the <b>Remote Desktop Users</b> window, click `OK`
+4. Right-click on this [script](https://github.com/derickayala25/derickayala25/blob/main/Generate-Names-Create-Users.txt) link and select `Open link in new tab`
+5. Select all the script and copy. Go back to the script pane in <b>DC-1</b> and paste the script in it. Notice that the default password for users will be <em>Password1</em>
+6. Click on the green `Run Script` arrow at the top of the window and observe the accounts being created
+7. When finished, open <b>Active Directory Users and Computers</b> and observe the accounts in the appropriate OU (_EMPLOYEES)
 
 <p>
-<img src="https://github.com/user-attachments/assets/7f7affc3-e6ca-4e92-be18-b7a3735de6a7" height="80%" width="80%" alt="Non-Admin Setup"/>
+<img src="https://github.com/user-attachments/assets/0b519a72-afa9-41cc-a2ce-8de3ddd8410f" height="80%" width="80%" alt="Non-Admin Setup"/>
+</p></br>
+
+<p>
+<img src="https://github.com/user-attachments/assets/fc85137a-6e25-4a15-bc35-ff26478df783" height="80%" width="80%" alt="Non-Admin Setup"/>
 </p></br>
 
 
-Generate-Names-Create-Users.txt
 
-https://github.com/derickayala25/derickayala25/blob/main/Generate-Names-Create-Users.txt
+
 
