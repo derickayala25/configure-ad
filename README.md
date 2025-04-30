@@ -314,7 +314,7 @@ Create a new OU named “_CLIENTS” and drag Client-1 into there
 1. Log into <b>DC-1</b> as <em>mydomain.com\jane_admin</em>
 2. Open <b>Windows PowerShell ISE</b> as an administrator
 3. Click on the blue arrow next to the word <b>script</b> to open the script pane
-4. Click on the link at the bottom that says <b>Select users that can remotely access this PC</b>. Click `Add`.
+4. Create a new file and paste the contents of the [script](https://github.com/derickayala25/derickayala25/blob/main/Generate-Names-Create-Users.txt) into it
 5. In the <b>Select Users or Groups</b> window, type <em>Domain Users</em> and click on `Check Names`. Click `OK`.
 6. Back in the <b>Remote Desktop Users</b> window, click `OK`
 
@@ -325,5 +325,5 @@ Create a new OU named “_CLIENTS” and drag Client-1 into there
 
 Generate-Names-Create-Users.txt
 
-
+https://github.com/derickayala25/derickayala25/blob/main/Generate-Names-Create-Users.txt
 
