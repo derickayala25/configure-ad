@@ -295,11 +295,25 @@ Create a new OU named “_CLIENTS” and drag Client-1 into there
 </p></br>
 
 
-<b>Setup Remote Desktop for non-administrative users on Client-1</b></br>
+<b>Set up Remote Desktop for non-administrative users on Client-1</b></br>
 
 1. Log into <b>Client-1</b> as <em>mydomain.com\jane_admin</em>
 2. Right-click on the <b>Start</b> icon and select <b>System</b>
 3. Click on the <b>Remote desktop</b> link on the right side
+4. Click on the link at the bottom that says <b>Select users that can remotely access this PC</b>. Click `Add`.
+5. In the <b>Select Users or Groups</b> window, type <em>Domain Users</em> and click on `Check Names`. Click `OK`.
+6. Back in the <b>Remote Desktop Users</b> window, click `OK`
+
+<p>
+<img src="https://github.com/user-attachments/assets/7f7affc3-e6ca-4e92-be18-b7a3735de6a7" height="80%" width="80%" alt="Non-Admin Setup"/>
+</p></br>
+
+
+<b>Create additional users and attempt to log into Client-1 with one of the users</b></br>
+
+1. Log into <b>DC-1</b> as <em>mydomain.com\jane_admin</em>
+2. Open <b>Windows PowerShell ISE</b> as an administrator
+3. Click on the blue arrow next to the word <b>script</b> to open the script pane
 4. Click on the link at the bottom that says <b>Select users that can remotely access this PC</b>. Click `Add`.
 5. In the <b>Select Users or Groups</b> window, type <em>Domain Users</em> and click on `Check Names`. Click `OK`.
 6. Back in the <b>Remote Desktop Users</b> window, click `OK`
