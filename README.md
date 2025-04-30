@@ -366,7 +366,13 @@ Now two out of the three other settings have been automatically updated: <b>Acco
 <img src="https://github.com/user-attachments/assets/36ef17d4-2200-4d1f-87ce-dd52363719a5" height="80%" width="80%" alt="Non-Admin Setup"/>
 </p>
 
-You can close the <b>Group Policy Management Editor</b> window.
+You can close the <b>Group Policy Management Editor</b> window. In the <b>Group Policy Management</b> window, you can click on <b>Default Domain Policy</b> and click `OK` on the pop-up window. Click on the `Settings` tab and close the pop-up window. You'll be able to see the updated password/account lockout policies. 
+
+<p>
+<img src="https://github.com/user-attachments/assets/0c6e72c3-3d17-4292-99a5-1e10ada97ca4" height="80%" width="80%" alt="Non-Admin Setup"/>
+</p>
+
+You can close the <b>Group Policy Management</b> window.
 
 
 
