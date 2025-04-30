@@ -351,6 +351,8 @@ If you're not already logged in to <b>DC-1</b> as the admin, log in as <em>mydom
 1. In <b>DC-1</b>, type <em>gpmc.msc</em> in the search box and select. This will open the <b>Group Policy Management Console</b>.
 2. On the left side of the window you will see `Forest: mydomain.com`. Expand it unto you see <b>Default Domain Policy</b>.
 3. Right-click on <b>Default Domain Policy</b> and select `Edit`. A new window will open called <b>Group Policy Management Editor</b>.
+4. In the <b>Group Policy Management Editor</b> window, expand the following: `Computer Configuration` > `Policies` > `Windows Settings` > `Security Settings` > `Account Policies`
+5. Click on <b>Account Lockout Policy</b>. Double-click on <b>Account lockout duration</b>, check the box that says <b>Define this policy setting</b>, and set the minutes to 30
 
 
 
