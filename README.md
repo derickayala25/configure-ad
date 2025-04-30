@@ -340,13 +340,19 @@ Now all of the new employees created are part of the <b>mydomain.com</b> domain.
 
 <p>
 <img src="https://github.com/user-attachments/assets/08261c74-7753-43a4-b450-0cbfbc7da332" height="80%" width="80%" alt="First Login-2"/>
-</p></br>
+</p>
 
-3. Now that you've confirmed that the setup has been done correctly, you can log off the <b>Client-1</b> VM.</br>
+3. Now that you've confirmed that the setup has been done correctly, you can log off the <b>Client-1</b> VM.</br></br>
 
 
 <b>Dealing with Account Lockouts</b></br>
-If you're not already logged in to <b>DC-1</b> as the admin, log in as <em>mydomain.com\jane_admin</em>
+If you're not already logged in to <b>DC-1</b> as the admin, log in as <em>mydomain.com\jane_admin</em>. Now, we'll configure account lockout threshold in <b>Group Policy</b>.
+
+1. In <b>DC-1</b>, type <em>gpmc.msc</em> in the search box and select. This will open the <b>Group Policy Management Console</b>.
+2. On the left side of the window you will see `Forest: mydomain.com`. Expand it unto you see <b>Default Domain Policy</b>.
+3. Right-click on <b>Default Domain Policy</b> and select `Edit`. A new window will open called <b>Group Policy Management Editor</b>.
+
+
 
 
 <p>
