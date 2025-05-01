@@ -363,16 +363,33 @@ If you're not already logged in to <b>DC-1</b> as the admin, log in as <em>mydom
 Now two out of the three other settings have been automatically updated: <b>Account lockout threshold</b> will be updated to <em>5 invalid logon attempts</em>, <b>Allow Administrator account lockout</b> will remain <em>Not Defined</em>, and <b>Reset account lockout counter after</b> will change to 10 minutes.
 
 <p>
-<img src="https://github.com/user-attachments/assets/36ef17d4-2200-4d1f-87ce-dd52363719a5" height="80%" width="80%" alt="Non-Admin Setup"/>
+<img src="https://github.com/user-attachments/assets/36ef17d4-2200-4d1f-87ce-dd52363719a5" height="80%" width="80%" alt="Updated settings"/>
 </p>
 
 You can close the <b>Group Policy Management Editor</b> window. In the <b>Group Policy Management</b> window, you can click on <b>Default Domain Policy</b> and click `OK` on the pop-up window. Click on the `Settings` tab and close the pop-up window. You'll be able to see the updated password/account lockout policies. 
 
 <p>
-<img src="https://github.com/user-attachments/assets/0c6e72c3-3d17-4292-99a5-1e10ada97ca4" height="80%" width="80%" alt="Non-Admin Setup"/>
+<img src="https://github.com/user-attachments/assets/0c6e72c3-3d17-4292-99a5-1e10ada97ca4" height="80%" width="80%" alt="Updated policies"/>
 </p>
 
-You can close the <b>Group Policy Management</b> window.
+You can close the <b>Group Policy Management</b> window.</br></br>
+
+
+<b>Forcing the Updated Policy</b></br>
+You can wait for the Group Policy to propagate automatically to the client machines (it takes about 90 minutes), or you can force an update immediately. To do this, go to <b>Client-1</b> and log in as <em>mydomain.com\jane_admin</em>.
+
+1. Once logged in, open <b>Command Prompt</b> as an administrator by typing <em>cmd</em> in the search box and selecting `Run as administrator`.
+2. Type `gpupdate /force` then press <b>Enter</b>. This will update the lockout policy by force. You can then log off the <b>Client-1</b> VM.
+
+<p>
+<img src="https://github.com/user-attachments/assets/bde6baca-3239-4ef6-865a-8e929749cba7" height="80%" width="80%" alt="Forcing the Update"/>
+</p>
+
+
+
+
+
+
 
 
 
