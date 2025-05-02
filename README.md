@@ -396,7 +396,7 @@ You can wait for the Group Policy to propagate automatically to the client machi
 <img src="https://github.com/user-attachments/assets/976603d8-1485-4d53-86c5-f21d32895e97" height="80%" width="80%" alt="Forcing the Update"/>
 </p>
 
-
+The lockout duration will last 30 minutes. Now we'll go to the domain controller and unlock the account.
 
 
 
