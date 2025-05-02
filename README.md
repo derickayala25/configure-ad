@@ -378,12 +378,12 @@ You can close the <b>Group Policy Management</b> window.</br></br>
 <b>Forcing the Updated Policy</b></br>
 You can wait for the Group Policy to propagate automatically to the client machines (it takes about 90 minutes), or you can force an update immediately. To do this, go to <b>Client-1</b> and log in as <em>mydomain.com\jane_admin</em>.
 
-1. Once logged in, open <b>Command Prompt</b> as an administrator by typing <em>cmd</em> in the search box and selecting `Run as administrator`.
-2. Type `gpupdate /force` then press <b>Enter</b>. This will update the lockout policy by force. You can then log off the <b>Client-1</b> VM.
+1. Once logged in, open <b>Command Prompt</b> as an administrator by typing <em>cmd</em> in the search box and select `Run as administrator`.
+2. Type <em>gpupdate /force</em> then press <b>Enter</b>. This will update the lockout policy by force. You can then log off the <b>Client-1</b> VM.
 
 <p>
 <img src="https://github.com/user-attachments/assets/bde6baca-3239-4ef6-865a-8e929749cba7" height="80%" width="80%" alt="Forcing the Update"/>
-</p>
+</p></br>
 
 
 
