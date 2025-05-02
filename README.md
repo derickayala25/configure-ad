@@ -387,7 +387,23 @@ You can wait for the Group Policy to propagate automatically to the client machi
 
 
 
-<b>Attempt to log in as a user using an incorrect password</b></br>
+<b>Attempt to log in as an user using an incorrect password</b></br>
+
+1. Open remote desktop and enter the username you selected before (in my case it was <b>mydomain.com\bepa.toli</b>).
+2. Type an incorrect password six times. On the sixth try you should get a message similar to this one:
+
+<p>
+<img src="https://github.com/user-attachments/assets/976603d8-1485-4d53-86c5-f21d32895e97" height="80%" width="80%" alt="Forcing the Update"/>
+</p>
+
+
+
+
+
+
+
+
+
 
 
 
