@@ -408,6 +408,7 @@ The lockout duration will last 30 minutes. However, we'll go to the domain contr
 <img src="https://github.com/user-attachments/assets/70e609b8-3680-49aa-ae5a-e15939a719f6" height="80%" width="80%" alt="Forcing the Update"/>
 </p></br>
 
+
 <b>Resetting the password</b>
 If you, however, want to reset the password, you can follow these steps:
 
@@ -419,6 +420,20 @@ If you, however, want to reset the password, you can follow these steps:
 
 <p>
 <img src="https://github.com/user-attachments/assets/97268969-3fb6-4761-8a77-57f406aaf617" height="80%" width="80%" alt="Forcing the Update"/>
+</p></br>
+
+
+<b>Enabling and Disabling Accounts</b>
+Let's disable the account in <b>Active Directory</b>
+
+1. Log in to <b>DC-1</b> (if you're not in already) and open <b>Active Directory Users and Computers</b>
+2. Right-click on <b>mydomain.com</b> and select <b>Find</b>
+3. In the <b>Find Users, Contacts and Groups</b> window, type the username in the <b>Name</b> box and click `Find Now`
+4. Right-click the account name and select <b>Disable account</b>
+5. This will disable the account immediately and a pop-up window will appear with the following message <em>Object <b>(the username)</b> has been disabled.</em> Click `OK`.
+
+<p>
+<img src="https://github.com/user-attachments/assets/2b631670-7ada-4752-b979-06be42e84de6" height="80%" width="80%" alt="Forcing the Update"/>
 </p></br>
 
 
