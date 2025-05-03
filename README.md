@@ -396,10 +396,30 @@ You can wait for the Group Policy to propagate automatically to the client machi
 <img src="https://github.com/user-attachments/assets/976603d8-1485-4d53-86c5-f21d32895e97" height="80%" width="80%" alt="Forcing the Update"/>
 </p>
 
-The lockout duration will last 30 minutes. Now we'll go to the domain controller and unlock the account.
+The lockout duration will last 30 minutes. However, we'll go to the domain controller and unlock the account.
 
+1. Log in to <b>DC-1</b> (if you're not in already) and open <b>Active Directory Users and Computers</b>
+2. Right-click on <b>mydomain.com</b> and select <b>Find</b>
+3. In the <b>Find Users, Contacts and Groups</b> window, type the username in the <b>Name</b> box and click `Find Now`
+4. Double-click the account name and another window will open. Go to the <b>Account</b> tab and you will see a checkbox with a message that says <em>Unlock account. This account is currently locked out in this Active Directory Domain Controller.</em>
+5. Tick the box, click `Apply` and `OK`
 
+<p>
+<img src="https://github.com/user-attachments/assets/70e609b8-3680-49aa-ae5a-e15939a719f6" height="80%" width="80%" alt="Forcing the Update"/>
+</p></br>
 
+<b>Resetting the password</b>
+If you, however, want to reset the password, you can follow these steps:
+
+1. Log in to <b>DC-1</b> (if you're not in already) and open <b>Active Directory Users and Computers</b>
+2. Right-click on <b>mydomain.com</b> and select <b>Find</b>
+3. In the <b>Find Users, Contacts and Groups</b> window, type the username in the <b>Name</b> box and click `Find Now`
+4. Right-click the account name and select <b>Reset password...</b>
+5. In the <b>Reset Password</b> window you can change the user's password.
+
+<p>
+<img src="https://github.com/user-attachments/assets/97268969-3fb6-4761-8a77-57f406aaf617" height="80%" width="80%" alt="Forcing the Update"/>
+</p></br>
 
 
 
