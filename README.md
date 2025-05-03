@@ -434,10 +434,13 @@ Let's disable the account in <b>Active Directory</b>
 
 <p>
 <img src="https://github.com/user-attachments/assets/2b631670-7ada-4752-b979-06be42e84de6" height="80%" width="80%" alt="Forcing the Update"/>
+</p>
+
+To enable the account, simply right-click on the account name and select <b>Enable account</b>. It will be enabled immediately.
+
+<p>
+<img src="https://github.com/user-attachments/assets/12dd4ddc-23f1-4f84-8b5c-36e542a559b6" height="80%" width="80%" alt="Forcing the Update"/>
 </p></br>
-
-
-
 
 
 
