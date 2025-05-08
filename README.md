@@ -66,7 +66,7 @@ Now we'll create a virtual machine that will serve as the domain controller.
 
 
 <b>Set Domain Controller’s NIC Private IP address to be static</b></br>
-In order to avoid disrupting clients' hability to connect to the domain controller, we need a static domain controller IP.
+In order to avoid disrupting clients' ability to connect to the domain controller, we need a static domain controller IP.
 1. In Azure, enter <em>virtual machines</em> in the search bar and click on the <b>DC-1</b> name.
 2. On the left-side panel, click on <b>Networking</b> > <b>Network settings</b>
 3. Click on the <b>Network interface / IP configuration</b> link at the top
